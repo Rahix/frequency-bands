@@ -1,0 +1,30 @@
+body {
+	padding-top: 10px;
+}
+
+div.multipage {
+	display: none;
+}
+
+div.multipage:target {
+	display: inline;
+}
+
+table.fb-table tbody tr td {
+	text-align: right;
+}
+
+/*table.fb-table thead,
+table.fb-table tbody {
+	display: block;
+}
+
+#table_body {
+	height: 200px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}*/
+
+.failfilter {
+	display: none;
+}
