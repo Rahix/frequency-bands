@@ -179,16 +179,24 @@ function switch_mid_down() {
 function sort_by(name, invert) {
 	d3.select("#table_body").selectAll("tr").sort(function (a,b) {
 		//console.log("a[name]: " + a[name] + " b[name]: " + b[name]);
+		var a_val = a[name];
+		var b_val = b[name];
+		if(isNaN(a_val)) {
+			a_val = Infinity;
+		}
+		if(isNaN(b_val)) {
+			b_val = Infinity;
+		}
 		if(invert) {
-			if (a[name] < b[name])
+			if (a_val < b_val)
 				return -1;
-			if (a[name] > b[name])
+			if (a_val > b_val)
 				return 1;
 			return 0;
 		} else {
-			if (a[name] < b[name])
+			if (a_val < b_val)
 				return 1;
-			if (a[name] > b[name])
+			if (a_val > b_val)
 				return -1;
 			return 0;
 		}
