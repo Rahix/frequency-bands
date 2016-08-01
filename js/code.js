@@ -23,7 +23,7 @@ function filter_table() {
 				if(fb_filter_text == "") {
 					return true;
 				}
-				if(+fb_filter_text == d.operating_band) {
+				if(+fb_filter_text == Math.floor(d.operating_band)) {
 					return true;
 				}
 				return false;
@@ -74,6 +74,22 @@ function pretty_print_mhz(mhz) {
 	return (mhz/1000) + " Ghz";
 }
 
+function band_name(ob) {
+  if(ob == 46.2) {
+    return "46a";
+  }
+  if(ob == 46.3) {
+    return "46a";
+  }
+  if(ob == 46.4) {
+    return "46a";
+  }
+  if(ob == 46.5) {
+    return "46a";
+  }
+  return ob;
+}
+
 function load_table() {
 	// Create table base structure
 
@@ -83,7 +99,7 @@ function load_table() {
 		.append("tr");
 
 	row.append("td")
-		.text(function(d) {return d.operating_band});
+		.text(function(d) {return band_name(d.operating_band)});
 
 	row.append("td")
 		.text(function(d) {return pretty_print_mhz(d.uplink_bandwidth)});

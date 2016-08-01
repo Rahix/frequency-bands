@@ -21,7 +21,7 @@ operating_band,uplink_lower,uplink_upper,downlink_lower,downlink_upper,duplex_mo
 20,832,862,791,821,,
 21,1447.9,1462.9,1495.9,1510.9,FDD,
 22,3410,3490,3510,3590,FDD,
-23,2000,2020,2180,2200,FDD,Band 23 is not applicable
+23,2000,2020,2180,2200,FDD,
 24,1626.5,1660.5,1525,1559,FDD,
 25,1850,1915,1930,1995,FDD,
 26,814,849,859,894,FDD,
@@ -45,13 +45,6 @@ operating_band,uplink_lower,uplink_upper,downlink_lower,downlink_upper,duplex_mo
 44,703,803,703,803,TDD,
 45,1447,1467,1447,1467,TDD,
 46,5150,5925,5150,5925,TDD,"This band is an unlicensed band restricted to licensed-assisted operation using Frame Structure Type 3. In this version of the specification, restricted to E-UTRA DL operation when carrier aggregation is configured. Band 46 is divided into four sub-bands as in Table 5.5-1A"
-46.2,5150,5250,5150,5250,TDD,
-46.3,5250,5350,5250,5350,TDD,
-46.4,5470,5725,5470,5725,TDD,
-46.5,5725,5925,5725,5925,TDD,
 65,1920,2010,2110,2200,FDD,
 66,1710,1780,2110,2200,FDD,The range 2180 – 2200 MHz of the DL operating band is restricted to E-UTRA operation when carrier aggregation is configured
 67,N/A,N/A,738,758,FDD,Restricted to E-UTRA operation when carrier aggregation is configured. The downlink operating band is paired with the uplink operating band (external) of the carrier aggregation configuration that is supporting the configured Pcell
-68,698,728,753,783,FDD,
-69,N/A,N/A,2570,2620,FDD,Restricted to E-UTRA operation when carrier aggregation is configured. The downlink operating band is paired with the uplink operating band (external) of the carrier aggregation configuration that is supporting the configured Pcell.
-70,1695,1710,1995,2020,FDD,The range 2010-2020 MHz of the DL operating band is restricted to E-UTRA operation when carrier aggregation is configured and TX-RX separation is 300 MHz.  The range 2005-2020 MHz of the DL operating band is restricted to E-UTRA operation when carrier aggregation is configured and TX-RX separation is 295 MHz
